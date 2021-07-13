@@ -1,0 +1,80 @@
+@media (max-width: 1000px) {
+  .contehome {
+    background: rgb(131, 181, 193);
+    font-family: 'Syncopate', sans-serif;
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 1fr 15%;
+    grid-template-rows: repeat(12, auto);
+    grid-template-areas:"logo     logo   chamname   chamname   chamname"
+                        "chamenu     chamenu   chamenu   chamenu   chamenu"
+                        "landscape   landscape   landscape   landscape     landscape"
+                        "event   event   event   event   event"
+                        "space   purpose   purpose   purpose   space1"
+                        "space   goals   goals   goals    space1"
+                        "space   compinf    compinf   compinf   space1"
+                        "space   fab1   fab1   fab1    space1"
+                        "space   fab2   fab2   fab2    space1"
+                        "space   fab3   fab3   fab3    space1"
+                        "footer   footer     footer      footer    footer"
+                        "footer2   footer2     footer2      footer2    footer2";
+                        ;
+  }
+  .contehome .logo{
+    border-radius:0;
+  }
+  .contehome .chamenu{
+    border-radius: 0 0 0 8rem;
+    padding-left: 6rem;
+  }
+  .contehome .anunci{
+    grid-area: anunci;
+  }
+.anuncio{
+  padding: 1rem;
+  width: 90%;
+  top: 0;
+}
+.anuncio11{
+  width: 90%;
+  height: 20%;
+}
+.three img{
+  width:13rem;
+}
+.temp1{
+  font-size: 3rem;
+}
+.anu1{
+  font-size: 1.2rem;
+}
+.anuncio1{
+  font-size: 1.3rem;
+}
+.anuncio2{
+ font-size: 2rem;
+}
+.anuncio3{
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+
+.fab1, .fab2, .fab3 p{
+  font-size: .7rem;
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.contehome .footer{
+  padding: 2rem;
+  line-height: 1.5rem;
+}
+.contehome .footer2{
+  padding: 1rem;
+}
+
+}

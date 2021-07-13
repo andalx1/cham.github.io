@@ -1,0 +1,272 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/*logo, nombre y menuDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD*/
+.chamenu {
+  padding-left: 3rem;
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #fcf9f9;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #312c4e;
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+/*grid de home html xxxxxxxxxxxxxxxxXXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+.contehome {
+  background: rgb(131, 181, 193);
+  font-family: 'Syncopate', sans-serif;
+  display: grid;
+  grid-template-columns: 15% 1fr 1fr 1fr 15%;
+  grid-template-rows: repeat(8, auto);
+  grid-template-areas:"logo     chamname   chamname   chamenu   chamenu"
+                      "landscape   landscape   landscape   landscape     landscape"
+                      "event   event   event   event   event"
+                      "space   purpose   purpose   purpose   space1"
+                      "space   goals   goals   goals    space1"
+                      "space   compinf    compinf   compinf   space1"
+                      "space   fab1   fab2   fab3    space1"
+                      "footer   footer     footer      footer2    footer2";
+}
+
+.contehome .logo {
+  background: rgb(253, 43, 43);
+  grid-area: logo;
+  border-radius: 0 0 0 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contehome .chamname {
+  background: rgb(253, 43, 43);
+  grid-area: chamname;
+}
+.contehome .chamenu {
+  background: rgb(253, 43, 43);
+  grid-area: chamenu;
+}
+.contehome .space {
+  background: #fcf9f9;
+  grid-area: space;
+}
+.contehome .space1 {
+  background: #fcf9f9;
+  grid-area: space1;
+}
+.contehome .temp {
+  grid-area: temp;
+}
+.contehome .landscape {
+  grid-area: landscape;
+}
+.contehome .event {
+  padding: 2rem;
+  background: rgb(136, 240, 32);
+  grid-area: event;
+}
+.contehome .purpose{
+  padding: 2.5rem 2.5rem 0;
+  background: #fcf9f9;
+  grid-area:purpose;
+}
+.contehome .goals{
+  padding: 3rem;
+  background: #fcf9f9;
+  grid-area:goals;
+}
+.goals p{
+  padding-top: 1.5rem;
+  line-height: 1.7rem;
+}
+.contehome .compinf {
+  background: #fcf9f9;
+  grid-area: compinf;
+  padding: 3rem;
+}
+.contehome .fab1{
+  font-family: 'Syncopate', sans-serif;
+  background: #fcf9f9;
+  grid-area:fab1;
+}
+.contehome .fab2{
+  font-family: 'Syncopate', sans-serif;
+  background: #fcf9f9;
+  grid-area:fab2;
+
+}
+.contehome .fab3{
+  font-family: 'Syncopate', sans-serif;
+  background: #fcf9f9;
+  grid-area:fab3;
+}
+.contehome .footer{
+  background-color: #303031;
+  padding: 2.5rem 0rem 2.5rem 11rem;
+  color: white;
+  grid-area:footer;
+  text-decoration: none;
+  line-height: 2.5rem;
+}
+.contehome .footer2{
+  background-color: #303031;
+  padding: 4rem 8rem 0rem 0rem;
+  color: white;
+  grid-area:footer2;
+}
+.footer2 a{
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  align-items: center;
+}
+.social a{
+  text-decoration: none;
+  color: aliceblue;
+  line-height: 1rem;
+}
+.social img{
+  width: 4rem;
+}
+.contact h2{
+  text-align: center;
+}
+.copyright p {
+  text-align: center;
+  font-size: .8rem;
+  color: aliceblue;
+}
+.copyright a{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.logo img{
+  width: 6rem;
+  
+}
+.titulo {
+  padding-top: .5rem;
+  font-family: 'Syncopate', sans-serif;
+  font-size: 1rem;
+  color: rgb(249, 250, 248);
+  text-shadow: 1px 1px 15px black, 0 0 .2em blue, 0 0 0.2em blue;
+}
+.chamname{
+  font-family: 'Syncopate', sans-serif;
+  padding: .6rem;
+}
+.chamenu {
+  font-family: 'Syncopate', sans-serif;
+  padding-top: 2rem;
+}
+.moto {
+  padding: 1rem;
+  font-size: 1rem;
+  color: rgb(249, 249, 252);
+  } 
+.landscape{
+    width: 100%;
+    position: relative;
+}
+.landscape img{
+  width: 100%;
+}
+.townfot1, .townfot2, .townfot3{
+  width: 100%;
+  height:15rem;
+  border-radius: 1rem 1rem 0 0;
+}
+.fabinfo1, .fabinfo2, .fabinfo3{
+  background-color: #312c4e;
+  color: white;
+  height: 90%;
+  border-radius: 1rem;
+  padding: .5rem;
+  margin: .5rem;
+  box-shadow: 2px 2px 9px black;
+  margin-bottom: 4rem;
+  line-height: 1.5rem;
+}
+.fab1, .fab2, .fab3 p{
+  font-size: .8rem;
+}
+.presh1, .presh2, .presh3{
+  font-size: .9rem;
+}
+
+.join{
+  padding: .7rem;
+  border-radius: 1rem;
+  background-color: #faf9fc;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  color: rgb(8, 8, 8);
+  text-shadow: none;
+  margin-top: 1rem;
+}
+.anuncio1{
+  font-size: 2rem;
+}
+.anuncio2{
+ font-size: 3rem;
+}
+.anuncio3{
+  font-size: 2.5rem;
+  padding-left: 2rem;
+}
+
+.home {
+  padding: 4rem;
+}
+.anuncio{
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  width: 45%;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  padding: 4rem;
+  display: flex;
+  justify-content: right;
+  align-items:center;
+  flex-direction: column;
+  text-shadow: 2px 2px 2px rgb(12, 12, 12);
+}
+.anuncio11{
+  opacity: .8;
+  background: rgb(254, 255, 254);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  position: absolute;
+  right: 3rem;
+  bottom: 2rem;
+  border-radius: 1rem;
+  padding: .5rem;
+  display: flex;
+  align-items:center;
+  flex-direction: row;
+justify-content:space-around;
+}
+.three img{
+  width:20rem;
+}
+.temp1{
+  font-size: 5rem;
+}
